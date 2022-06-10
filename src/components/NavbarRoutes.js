@@ -6,6 +6,7 @@ import About from "../pages/About";
 import CountactUs from "../pages/ContactUs";
 import Page404 from "../pages/Page404";
 import User from "../pages/User";
+import Filter from "../pages/Filter";
 
 const NavbarRoutes = () => {
   return (
@@ -15,6 +16,7 @@ const NavbarRoutes = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<CountactUs />} />
+        <Route path="/filter" element={<Filter />} />
         <Route path="/user/:name" element={<User />} />
         <Route path="/*" element={<Page404 />} />
       </Routes>
